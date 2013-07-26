@@ -109,10 +109,10 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
-ROOT_URLCONF = 'django_project.urls'
+ROOT_URLCONF = '{{ project_name }}.urls'
 
 # Python dotted path to the WSGI application used by Django's runserver.
-WSGI_APPLICATION = 'django_project.wsgi.application'
+WSGI_APPLICATION = '{{ project_name }}.application'
 
 TEMPLATE_DIRS = (
     PROJECT_DIR.child("templates"),
