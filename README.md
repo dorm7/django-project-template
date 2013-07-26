@@ -32,4 +32,6 @@ For production:
 
     pip install -r requirements.txt
 
+For heroku:
 
+Use requirements-heroku.txt to replace requirements.txt
