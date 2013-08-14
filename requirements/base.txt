@@ -1,4 +1,4 @@
-Django==1.5.1
+Django==1.5.2
 Unipath==1.0
 wsgiref==0.1.2
 django-braces==1.0.0
