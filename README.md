@@ -9,6 +9,11 @@ This is a django template for dorm7
 At first, you should make sure you have [virtualenv](http://www.virtualenv.org/) installed. Then create your virtualenv:
 
     virtualenv --distribute test_project
+    
+Second, you need to enable the virtualenv by
+
+	source test_project/bin/activate
+	
 
 ### Install Django
 
