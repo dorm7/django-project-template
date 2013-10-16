@@ -4,3 +4,4 @@ wsgiref==0.1.2
 django-braces==1.2.1
 South>=0.8.1
 gunicorn>=0.17.5
+logutils>=0.3.3
