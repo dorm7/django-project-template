@@ -3,6 +3,7 @@
 
 from os import environ
 from unipath import Path
+import sys
 
 from django.core.exceptions import ImproperlyConfigured
 
@@ -164,7 +165,19 @@ LOGGING = {
             '()': 'django.utils.log.RequireDebugFalse'
         }
     },
+    'formatters': {
+        'standard': {
+            'format': "[%(asctime)s] %(levelname)s [%(name)s.%(funcName)s:%(lineno)d] %(message)s",
+            'datefmt': "%d/%b/%Y %H:%M:%S"
+        },
+    },
     'handlers': {
+        'console': {
+            'level': 'DEBUG',
+            '()': 'logutils.colorize.ColorizingStreamHandler',
+            'formatter': 'standard',
+            'stream': sys.stdout
+        },
         'mail_admins': {
             'level': 'ERROR',
             'filters': ['require_debug_false'],
@@ -177,5 +190,10 @@ LOGGING = {
             'level': 'ERROR',
             'propagate': True,
         },
+        '': {
+            'handlers': ['console'],
+            'level': 'DEBUG',
+            'propagate': True,
+        }
     }
 }
