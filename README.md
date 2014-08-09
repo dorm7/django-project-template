@@ -27,6 +27,13 @@ To create the project, run the following command:
 
     django-admin.py startproject --template=https://github.com/dorm7/django-project-template/archive/master.zip --extension=py,rst,html test_project
 
+### Install scss requirement
+
+    sudo gem update --system
+    sudo gem install scss
+    sudo gem install compass
+    sudo gem install bootstrap-sass
+
 ### Install requirements
 
 For development:
