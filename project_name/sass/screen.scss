@@ -4,6 +4,6 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "compass/reset";
-h1{
-  color:red;
-}
+@import "bootstrap-compass";
+/* @import "bootstrap-variables";  */ // you can add your customized variable to override them
+@import "bootstrap";
