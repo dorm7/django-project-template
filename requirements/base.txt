@@ -1,7 +1,6 @@
-Django>=1.5.4
+Django>=1.7
 Unipath==1.0
 wsgiref==0.1.2
 django-braces==1.2.1
-South>=0.8.3
 gunicorn>=0.18.0
 logutils>=0.3.3
