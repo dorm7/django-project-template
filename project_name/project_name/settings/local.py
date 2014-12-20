@@ -38,3 +38,7 @@ DEBUG_TOOLBAR_CONFIG = {
     'INTERCEPT_REDIRECTS': False,
     'SHOW_TEMPLATE_CONTEXT': True,
 }
+
+#  Django Compressor for development. so it can put image to correct place
+COMPRESS_ENABLED = True
+COMPRESS_REBUILD_TIMEOUT = 0

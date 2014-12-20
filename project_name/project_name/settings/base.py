@@ -79,6 +79,7 @@ STATICFILES_DIRS = (
 STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.FileSystemFinder',
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+    'compressor.finders.CompressorFinder',
 )
 
 # Make this unique, and don't share it with anybody.
@@ -129,9 +130,9 @@ DJANGO_APPS = (
     'django.contrib.staticfiles',
     'django.contrib.admin',
 )
-
 THIRD_PARTY_APPS = (
-    # Database migration helpers:
+    'compressor',
+    'bootstrap3',
 )
 
 # Apps specific for this project go here.
@@ -187,3 +188,8 @@ LOGGING = {
         }
     }
 }
+
+COMPRESS_PRECOMPILERS = (
+    ('text/x-scss', 'django_libsass.SassCompiler'),
+)
+

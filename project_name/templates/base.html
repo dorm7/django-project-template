@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 {% verbatim %}
-{% load compress static wagtailuserbar %}
-{% load core_tags %}
+{% load compress static %}
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
@@ -23,8 +22,8 @@
     <![endif]-->
 </head>
 <body>
-	{% block body%}
-	<button class='btn btn-info'> It Works</button>
-	{% endblock %}
+    {% block body%}
+    <button class='btn btn-info'> It Works</button>
+    {% endblock %}
 </body>
 {% endverbatim %}
