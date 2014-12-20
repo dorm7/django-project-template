@@ -8,6 +8,6 @@ urlpatterns = patterns('',
     # url(r'^$', '{{ project_name }}.views.home', name='home'),
     # url(r'^{{ project_name }}/', include('{{ project_name }}.foo.urls')),
 
-    url(r'^/$', TemplateView.as_view(template_name='base.html')), 
+    url(r'^$', TemplateView.as_view(template_name='base.html')), 
     url(r'^admin/', include(admin.site.urls)),
 )
