@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+{% load compress static wagtailuserbar %}
+{% load core_tags %}
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    {% compress css %}
+        <link rel="stylesheet" type="text/x-scss" href="{% static 'css/all.scss' %}">
+    {% endcompress %}
+
+    {% block extra_css %}{% endblock %}
+    <!--[if lt IE 9]>
+    <script src="{% static 'js/html5shiv.min.js' %}"></script>
+    <script src="{% static 'js/respond.min.js' %}"></script>
+    <![endif]-->
+</head>
+<body>
+	{% block body%}
+	<button class='btn btn-info'> It Works</button>
+	{% endblock %}
+</body>
