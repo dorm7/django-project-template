@@ -1,0 +1,11 @@
+{% extends "styleguide.html" %}
+{% load compress %}
+{% load staticfiles %}
+{% block style %}
+    {% compress css %}
+        <link rel="stylesheet" type="text/x-scss" href="{% static 'css/all.scss' %}">
+    {% endcompress %}
+{% endblock %}
+
+{% block buttom %}
+{% endblock %}
