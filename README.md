@@ -1,5 +1,7 @@
 # Django Template for Dorm7
 
+[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/dorm7/django-project-template?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 This is a django template for dorm7
 
 ## INSTALLATION & SETTINGS
