@@ -8,7 +8,7 @@ This is a django template for dorm7
 
 ### Install Django
 
-To install django, first go to your virtualenv, and then run the following command:
+To install django, justtype the following command
 
     sudo pip install django
     
