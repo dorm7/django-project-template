@@ -7,4 +7,4 @@ django-compressor==1.4
 django-libsass==0.2
 sqlparse==0.1.14
 django_kss
--e git+https://github.com/timtan/Django-bootstrap3-scss@7527a8f4fb26caf73a0d36991db3dfca307c4c0d#egg=django_bootstrap3_sass-master
+django-bootstrap3-sass
