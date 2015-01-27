@@ -132,7 +132,7 @@ DJANGO_APPS = (
 )
 THIRD_PARTY_APPS = (
     'compressor',
-    'bootstrap3-sass',
+    'bootstrap3_sass',
     'django_kss',
 	'styleguide',
 )
