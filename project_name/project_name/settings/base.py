@@ -134,7 +134,7 @@ THIRD_PARTY_APPS = (
     'compressor',
     'bootstrap3_sass',
     'django_kss',
-	'styleguide',
+    'styleguide',
 )
 
 # Apps specific for this project go here.
@@ -194,6 +194,3 @@ LOGGING = {
 COMPRESS_PRECOMPILERS = (
     ('text/x-scss', 'django_libsass.SassCompiler'),
 )
-
-import os
-PYKSS_DIRS = [os.path.join(PROJECT_DIR, 'styleguide','static', 'css')]

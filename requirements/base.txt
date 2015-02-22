@@ -6,5 +6,5 @@ logutils>=0.3.3
 django-compressor==1.4
 django-libsass==0.2
 sqlparse==0.1.14
-django_kss
+django-kss-styleguide
 django-bootstrap3-sass
